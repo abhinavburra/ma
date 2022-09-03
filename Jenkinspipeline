@@ -7,11 +7,11 @@ pipeline {
 	      stage("build")
 		  {
 	        steps {
-		  if($env.BRANCH_NAME=="main"){
+		  if($ENV_NAME=="main"){
 		  
 		       echo "building application"
 		       }
-		       else if($env.BRANCH_NAME=="master"){
+		       else if($ENV_NAME=="master"){
 		       echo "BUILDING THE APPLICATION IN DEV ENVIRONMENT"
 		       }
 			   }
